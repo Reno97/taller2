@@ -9,6 +9,6 @@ package taller.pkg2;
  *
  * @author HP-G4
  */
-class Archivo {
+class Arch{
     
 }
