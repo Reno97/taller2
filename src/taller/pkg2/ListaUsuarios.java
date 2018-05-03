@@ -1,42 +1,34 @@
 
 package taller.pkg2;
 
+import java.util.ArrayList;
+
 public class ListaUsuarios {
     //atributos
-    private int CantMaxUsuarios;
-    private int PosActual;
-    
+    private int posActual;
+    public static ArrayList<Usuario> listaUsuarios;
+
+
    
 //Constructor
-     public ListaUsuarios(int CantMaxUsuarios) {
-        this.CantMaxUsuarios = CantMaxUsuarios;
-   
-        
-    }
-//////////////getter and setter////////////////
-    public int getCantMaxUsuarios() {
-        return CantMaxUsuarios;
-    }
 
-    public void setCantMaxUsuarios(int CantMaxUsuarios) {
-        this.CantMaxUsuarios = CantMaxUsuarios;
-    }
+    public ListaUsuarios(int posActual, ArrayList<Usuario> listaUsuarios ) {
+        this.posActual = posActual;
+        listaUsuarios= new ArrayList();}
 
     public int getPosActual() {
-        return PosActual;
+        return posActual;
     }
 
-    public void setPosActual(int PosActual) {
-        this.PosActual = PosActual;
+    public void setPosActual(int posActual) {
+        this.posActual = posActual;
     }
-    
-//public boolean agregarUsuario(){
-    //for (int i = 0;i<Usuario.length();i++){
-     //if (Usuario[i]==){}}//
 
-   
- 
-// if registrar_usuario.getNickname();}//////////////////////
-    
+    public static ArrayList<Usuario> getListaUsuarios() {
+        return listaUsuarios;
+    }
 
-}
+    public static void setListaUsuarios(ArrayList<Usuario> listaUsuarios) {
+        ListaUsuarios.listaUsuarios = listaUsuarios;
+    }
+        }
