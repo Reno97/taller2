@@ -6,8 +6,10 @@ import java.util.ArrayList;
 public class Taller2 {
     //lista Usuarios(nickname,nombreCompleto,password,banda)
 public static ArrayList<Usuario> User= new ArrayList();
+
    //lista Banda(nombreBanda,canciones)
 public static ArrayList<Banda> band= new ArrayList();
+
     //CARGAR LISTA DE USUARIOS
     //leemos el archivo usuarios.txt y almacenamos a los usuarios en el array User
 public static void leerArchivoUsuario() throws IOException{
@@ -39,6 +41,7 @@ public static void leerArchivoUsuario() throws IOException{
 		        //Cerramos el archivo
 		        us.close();}
 
+
     //leemos el archivo bandas.txt y almacenamos a los usuarios en el array band
 public static void leerArchivoBanda() throws IOException {
     String nombreBanda;
@@ -49,7 +52,7 @@ public static void leerArchivoBanda() throws IOException {
 			Registro regEnt = Banda.getRegistro();
 			//Tomamos los datos del registro,
 			nombreBanda= regEnt.getString();
-                        //falta agregar al array y poner el atributo listaCanciones
+                        
     }    
         		        Banda.close();}
 
